@@ -8,6 +8,7 @@ from modules.outdated import *
 from modules.robots import *
 from modules.whois import *
 from modules.siteup import *
+from modules.write_csv import *
 import csv
 
 
@@ -69,6 +70,8 @@ def report(ipaddress, domainname, robots_txt, nmap, whois, outdated, sitestatus)
     write_file(project_dir + "/nmap.txt", nmap)
     write_file(project_dir + "/outdated.txt", outdated)
     write_file(project_dir + "/status.txt", sitestatus)
+    checkfile()
+    write_findings(target, domainname, ipaddress, sitestatus, whois, robots_txt, outdated, nmap)
 
 if full_domain != 'None' and target != 'None':
     gather_info(full_domain)
