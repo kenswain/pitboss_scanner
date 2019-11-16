@@ -7,7 +7,14 @@
 * Performing Whois
 * Performing NMAP Scan
 * Downloading of robots.txt
-* Creates a seprate dirrectory for each target under the directory where the tool is run*
+* Checking if site is up
+* Writes output to csv file
+* Selectable Scans
+
+## On the todo list
+
+* Read targets from CSV for easy batching
+
 
 ## Requirements
 
@@ -22,5 +29,5 @@ Right now this only runs on Linux or MacOS
 ## Useage
 
 ```
-pitboss.py -t <targetname> -d <domainname>
+pitboss.py -t <targetname> -d <domainname> -s <scan type>
 ```
