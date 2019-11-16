@@ -15,7 +15,7 @@ def checkfile():
 
 def write_findings(target, domain_name, ip_address, siteup, whois, robots, outdated, nmap_scan):
     findings = [target, domain_name, ip_address, siteup, whois, robots, outdated, nmap_scan]
-    with open('people1.csv', 'a') as csvFile:
+    with open('findings.csv', 'a') as csvFile:
         writer = csv.writer(csvFile)
         writer.writerow(findings)
         csvFile.close()
