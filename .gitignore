@@ -6,6 +6,9 @@
 .DS_Store
 .AppleDouble
 .LSOverride
+.vscode
+.README.md.icloud
+.gitignore
 
 # Icon must end with two \r
 Icon
